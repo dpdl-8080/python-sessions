@@ -11,7 +11,7 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
-
+#modifying the code
     # Convert frame to grayscale for better accuracy
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -25,7 +25,7 @@ while True:
     # Display the result
     cv2.imshow('Face Detection', frame)
 
-    # Break loop on 'q' key press
+    # Break loop on 'q' key pressP
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
